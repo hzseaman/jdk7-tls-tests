@@ -47,5 +47,7 @@ public class JavaNetSsl
     assert html.contains("</html>");
 
     in.close();
+
+    System.out.println("success: " + html.substring(0, 50));
   }
 }
