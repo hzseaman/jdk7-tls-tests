@@ -37,10 +37,14 @@ public class JavaNetSsl
 
     String inputLine;
 
+    String html = "";
     while ((inputLine = in.readLine()) != null)
     {
-      System.out.println(inputLine);
+      //System.out.println(inputLine);
+      html += inputLine;
     }
+
+    assert html.contains("</html>");
 
     in.close();
   }
